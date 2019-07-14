@@ -69,9 +69,6 @@ img {
 }
 
 /* ---- Page Elements ---- */
-.light {
-	font-weight: 300;
-}
 
 .banner-text {
 	background: #2a2a2a;
@@ -92,7 +89,7 @@ fieldset {
 
 .extra-text {
 	font-size: 0.75em;
-	margin: -12px 0px 30px;
+	margin: -12px 0 30px;
 	text-align: center;	
 }
 
@@ -176,7 +173,7 @@ textarea {
 	border: none;
 	border-radius: 2px;
 	background-color: #e6e6e6;
-	margin: 7px 0px 20px;
+	margin: 7px 0 20px;
 	width: 100%;
 }
 
