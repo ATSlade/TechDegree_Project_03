@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>TD Project x</title>
+    <title>TD Project 3 - Online Registration Form</title>
+    <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='css/normalize.css'>
     <link rel='stylesheet' type='text/css' href='css/styles.css'>
@@ -12,7 +13,7 @@
 <div class='container-main'>
 
     <header class='banner'>
-        <h3 class='banner-text'>The Code Review</h2>
+        <h3 class='banner-text'>The Code Review</h3>
     </header>
     
     <section class='content-main'>
@@ -29,24 +30,24 @@
             <fieldset>
                 <legend class='section-head top-legend'>Contact Information</legend>
 
-                <label for='name light' class='contact-info'>Full Name</label>
+                <label for='name' class='contact-info'>Full Name</label>
                 <input type='text' id='name' name='user_name' placeholder='Required'>
 
-                <label for='mail light' class='contact-info'>Email Address</label>
+                <label for='mail' class='contact-info'>Email Address</label>
                 <input type='email' id='mail' name='user_email' placeholder='Required'>
                 
-                <label for='phone light' class='contact-info'>Phone Number</label>
+                <label for='phone' class='contact-info'>Phone Number</label>
                 <input type='tel' id='phone' name='user_phone'>
                 
-                <label for='address light' class='contact-info'>Street Address</label>
+                <label for='address' class='contact-info'>Street Address</label>
                 <input type='text' id='address' name='user_address'>
 
-                <label for='city light' class='contact-info'>City</label>
+                <label for='city' class='contact-info'>City</label>
                 <input type='text' id='city' name='user_city'>
                 
-                <label for='state light' class='contact-info'>State</label>
-                <select id='state' name='user_state' placeholder='Choose State'>
-                    <option value="XX" class='state-choice'>Choose State</option>
+                <label for='state' class='contact-info'>State</label>
+                <select id='state' name='user_state'>
+                    <option selected='selected'>Choose State</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -100,7 +101,7 @@
                     <option value="WY">Wyoming</option>
                 </select>
 
-                <label for='zip-code light' class='contact-info'>Zip Code</label>
+                <label for='zip-code' class='contact-info'>Zip Code</label>
                 <input type='text' id='zip-code' name='user_zip-code'>
             </fieldset> <!-- top or 1 of 2 -->
 
@@ -111,24 +112,24 @@
                 <p class='newsletter-text light'>Select the newsletters you would like to receive</p>
 
                 <input type='checkbox' id='html_news' value='newsletter_html' name='newsletter_choice'>
-                <label class='checkbox-choice light' for='html_news'>HTML News</label><br>    
+                <label class='checkbox-choice' for='html_news'>HTML News</label><br>    
                 <input type='checkbox' id='css_news' value='newsletter_css' name='newsletter_choice'>
-                <label class='checkbox-choice light' for='html_news'>CSS News</label><br>  
+                <label class='checkbox-choice' for='html_news'>CSS News</label><br>  
                 <input type='checkbox' id='javascript_news' value='newsletter_javascript' name='newsletter_choice'>
-                <label class='checkbox-choice light' for='html_news'>Javascript News</label><br>  
+                <label class='checkbox-choice' for='html_news'>Javascript News</label><br>  
 
-                <p class='newsletter-text light'>Newsletter format</p>
+                <p class='newsletter-text'>Newsletter format</p>
                 <input type='radio' id='html_choice' value='format_html' name='format_choice'>
-                <label class='radio-choice light' for='html_news'>HTML</label><br>
-                <input type='radio' id='plain_text_choice' value='plain_text' name='format_choice'>
-                <label class='radio-choice light' for='plain_text_news'>Plain text</label><br>
+                <label class='radio-choice' for='html_choice'>HTML</label><br>
+                <input type='radio' id='plain_text_choice' value='format_plain_text' name='format_choice'>
+                <label class='radio-choice' for='plain_text_choice'>Plain text</label><br>
                 
-                <p class='newsletter-text light'>Other topics you'd like to hear about</p>
+                <p class='newsletter-text'>Other topics you'd like to hear about</p>
                 <textarea rows='6' id='notes' name='user_notes'></textarea>
                 <button type='submit'>Sign Up</button>
             </fieldset> <!-- bottom or 2 of 2 -->
         </form> 
-        <p class='copyright light'>Copyright The Code Review</p>
+        <p class='copyright'>Copyright The Code Review</p>
     </section>
 </div>  <!-- container-main -->
 </body>
