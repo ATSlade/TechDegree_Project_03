@@ -5,7 +5,7 @@
 ==================================== */
 
 * {
-	box-sizing: border-box; /* NEED TO RESEARCH THIS!!! */
+	box-sizing: border-box;
 }
 
 html {
@@ -38,10 +38,6 @@ li {
 
 a {
 	text-decoration: none;
-}
-
-a:hover {
-	color: #b066f5;
 }
 
 img {
@@ -78,6 +74,15 @@ img {
 	text-transform: uppercase;
 }
 
+.contact-info-container {
+	background-color: rgb(245, 251, 245);
+	padding:10px;
+}
+
+.top-hr-2 {
+	margin-bottom: 0;
+}
+
 fieldset {
 	border: none;
 }
@@ -100,12 +105,13 @@ fieldset {
 
 .top-hr-2 {
 	border: none;
-	margin-top: -5px;
+	border-top: 2px solid rgb(47, 46, 46);
+	margin: -5px 0 0;
 }
 
-.top-hr-2, .bottom-hr {
+.bottom-hr {
 	border-top: 2px solid rgb(47, 46, 46);
-	margin-bottom: 25px;
+	margin: 0 0 25px 0;
 }
 
 .section-head {
@@ -136,7 +142,8 @@ input[type='email'],
 input[type='tel'],
 input[type='text'],
 select {
-	background-color: #e6e6e6;
+	background-color: #dad8d8;
+	transition: background-color 0.5s ease-in-out 0s;
 	border: none;
 	border-radius: 4px;
 	height: auto;
@@ -151,8 +158,9 @@ select {
 	color: #3a3a3a;
 }
 
-input:focus {
-	border-color: #1e1f2f;
+input:focus, select:focus {
+	background-color: rgb(216, 240, 251);
+	outline-color: rgb(44, 90, 218); 
 }
 
 input:last-child {
@@ -183,7 +191,7 @@ button {
 	display: block;
 	float: left;
 	font-weight: 900;
-	background-color: rgb(88, 192, 178);
+	background-color: rgb(88, 191, 178);
 	border-radius: 3px;
 	padding: 20px 0;
 	text-align: center;
@@ -202,6 +210,7 @@ button {
 	display: table;
 	clear: both;
 }
+
 
 /*======================================
 			Media Queries
@@ -251,8 +260,4 @@ input:last-child {
 	width: 30%;
 }
 
-input:focus {
-	border: 1px solid #151a7e;
-	outline: none;
-}
 }
