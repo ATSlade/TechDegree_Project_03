@@ -27,14 +27,15 @@
         <hr class='top-hr-2'>
 
         <form action='index.html' method='post'>
+        <div class='contact-info-container'>   
             <fieldset>
                 <legend class='section-head top-legend'>Contact Information</legend>
 
                 <label for='name' class='contact-info'>Full Name</label>
-                <input type='text' id='name' name='user_name' placeholder='Required'>
+                <input type='text' id='name' name='user_name' placeholder='Required' required>
 
                 <label for='mail' class='contact-info'>Email Address</label>
-                <input type='email' id='mail' name='user_email' placeholder='Required'>
+                <input type='email' id='mail' name='user_email' placeholder='Required' required>
                 
                 <label for='phone' class='contact-info'>Phone Number</label>
                 <input type='tel' id='phone' name='user_phone'>
@@ -102,8 +103,9 @@
                 </select>
 
                 <label for='zip-code' class='contact-info'>Zip Code</label>
-                <input type='text' id='zip-code' name='user_zip-code'>
+                <input type='text' id='zip-code' name='user_zip-code' placeholder='Required' required>
             </fieldset> <!-- top or 1 of 2 -->
+        </div>
 
             <hr class='bottom-hr'>
 
