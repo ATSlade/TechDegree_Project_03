@@ -10,16 +10,17 @@
 </head>
 
 <body>
-<div class='container-main'>
+
 
     <header class='banner'>
-        <h3 class='banner-text'>The Code Review</h3>
+        <h1 class='banner-text'>The Code Review</h1>
     </header>
-    
+
+<div class='container-main'>    
     <section class='content-main'>
     
         <div class='sub-header'>
-            <h3 class='CTA-text'>Signup for our newsletter</h3>
+            <h2 class='CTA-text'>Signup for our newsletter</h2>
             <p class='extra-text light'>Get the latest news on how your code is doing right in your inbox</p>
         </div>
 
@@ -112,22 +113,20 @@
             <fieldset>
                 <legend class='section-head'>Newsletter</legend>
                 <p class='newsletter-text light'>Select the newsletters you would like to receive</p>
-
                 <input type='checkbox' id='html_news' value='newsletter_html' name='newsletter_choice'>
                 <label class='checkbox-choice' for='html_news'>HTML News</label><br>    
                 <input type='checkbox' id='css_news' value='newsletter_css' name='newsletter_choice'>
-                <label class='checkbox-choice' for='html_news'>CSS News</label><br>  
+                <label class='checkbox-choice' for='css_news'>CSS News</label><br>  
                 <input type='checkbox' id='javascript_news' value='newsletter_javascript' name='newsletter_choice'>
-                <label class='checkbox-choice' for='html_news'>Javascript News</label><br>  
-
+                <label class='checkbox-choice' for='javascript_news'>Javascript News</label><br>  
                 <p class='newsletter-text'>Newsletter format</p>
                 <input type='radio' id='html_choice' value='format_html' name='format_choice'>
                 <label class='radio-choice' for='html_choice'>HTML</label><br>
                 <input type='radio' id='plain_text_choice' value='format_plain_text' name='format_choice'>
                 <label class='radio-choice' for='plain_text_choice'>Plain text</label><br>
                 
-                <p class='newsletter-text'>Other topics you'd like to hear about</p>
-                <textarea rows='6' id='notes' name='user_notes'></textarea>
+                <label for='other_topics' class='text-box'>Other topics you'd like to hear about</label>
+                <textarea rows='6' id='other_topics' name='user_notes'></textarea>
                 <button type='submit'>Sign Up</button>
             </fieldset> <!-- bottom or 2 of 2 -->
         </form> 
